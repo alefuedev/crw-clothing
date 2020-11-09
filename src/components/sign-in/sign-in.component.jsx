@@ -14,6 +14,7 @@ class SignIn extends React.Component {
       password: "",
     };
   }
+
   handleChange(e) {
     const { value, name } = e.target;
     this.setState({ [name]: value });
@@ -30,7 +31,7 @@ class SignIn extends React.Component {
         <h2>I already have an account</h2>
         <span>Sign in with you email</span>
 
-        <form onSubmit="this.handleSubmit">
+        <form onSubmit={this.handleSubmit}>
           <FormInput
             name="email"
             type="email"
