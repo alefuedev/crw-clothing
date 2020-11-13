@@ -1,5 +1,5 @@
 import React from "react";
-import { SHOP_DATA } from "./shop.data.js";
+import SHOP_DATA from "./shop.data.js";
 
 import CollectionPreview from "./../../components/collection-preview/collection-preview.component";
 
@@ -12,6 +12,7 @@ class Shop extends React.Component {
     };
   }
   render() {
+    console.log(SHOP_DATA);
     const { collections } = this.state;
     return (
       <div className="shop-page">
